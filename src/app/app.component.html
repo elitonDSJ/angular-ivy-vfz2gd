@@ -1,4 +1,19 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>{{ titulo }}</h1>
+<h3>{{ sobrenome }} {{ nome }}</h3>
+
+<div id="geral">
+  <label for="nome" id="for">Nome: </label>
+  <input type="text" [(ngModel)]="nome" id="nome" />
+  <br />
+  <label for="sobrenome" id="for">Sobrenome: </label>
+  <input type="text" [(ngModel)]="sobrenome" id="sobrenome" />
+  <br />
+  <input type="button" value="Salvar" (click)="salvar()" />
+
+  <div>
+    <h1>Calculadora</h1>
+    <h3>Idade: {{ a }}</h3>
+    <input type="text" [(ngModel)]="anoNascimento" id="numero" />
+    <input type="button" value="Calcular" (click)="calc()" />
+  </div>
+</div>

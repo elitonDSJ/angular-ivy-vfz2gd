@@ -6,6 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  public peso: number = 0;
   public titulo: string = 'Hello World';
   public nome: string = '';
   public sobrenome: string = '';
@@ -20,5 +21,9 @@ export class AppComponent {
     this.a = this.anoAtual - this.anoNascimento;
     console.log(this.a);
     console.log('Idade: ' + (this.anoAtual - this.anoNascimento));
+  }
+
+  exibir() {
+    console.log(this.peso);
   }
 }

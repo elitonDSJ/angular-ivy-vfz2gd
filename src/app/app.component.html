@@ -1,3 +1,10 @@
+<div class="label">
+  <input type="button" value="-" (click)="rem()" class="btn" />
+  <input type="text" value="{{ campo }}" class="campo" />
+  <input type="button" value="+" (click)="add()" class="btn" />
+</div>
+
+<br />
 <div class="teste">
   <label for="peso">Peso: </label>
   <input type="text" [(ngModel)]="peso" id="" />

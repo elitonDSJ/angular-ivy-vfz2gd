@@ -6,6 +6,7 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  public campo: number = 0;
   public peso: number = 0;
   public titulo: string = 'Hello World';
   public nome: string = '';
@@ -13,6 +14,14 @@ export class AppComponent {
   public a: number = 0;
   public anoNascimento: number = 0;
   public anoAtual: number = 2022;
+
+  add() {
+    this.campo++;
+  }
+  rem() {
+    this.campo--;
+  }
+
   salvar() {
     console.log('|-> ' + this.sobrenome + ' ' + this.nome);
   }

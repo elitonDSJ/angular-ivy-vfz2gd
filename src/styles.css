@@ -1,1 +1,14 @@
 /* Add application styles & imports to this file! */
+.campo {
+  text-align: center;
+  width: 100px;
+  border: 5px solid;
+  color: blue;
+  background-color: red;
+}
+.btn {
+  padding: 10px;
+  background-color: white;
+  border-radius: 100%;
+  width: 10%;
+}
